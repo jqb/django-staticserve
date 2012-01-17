@@ -30,3 +30,7 @@ Installation
 simply download and install::
 
   python setup.py install
+
+or directly from github::
+
+  pip install -e git+git@github.com:jqb/django-staticserve.git#egg=staticserve
