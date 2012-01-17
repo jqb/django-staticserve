@@ -28,7 +28,7 @@ To use it just put in your projects MIDDLEWARE_CLASSES settings::
       'staticserve.middleware.StaticServe',
 
       # OR:
-      # 'staticserve.middleware.StaticServe',
+      # 'staticserve.middleware.MediaServe',
   )
 
 
