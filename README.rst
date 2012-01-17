@@ -12,15 +12,27 @@ so I've created this package.
 Usage
 -----
 
-Just put in your projects MIDDLEWARE_CLASSES settings::
+Package provides two middleware classes
+
+- `staticserve.middleware.StaticServe`
+  uses STATIC_URL & STATIC_ROOT settings
+
+- `staticserve.middleware.MediaServe`
+  uses MEDIA_URL & MEDIA_ROOT settings
+
+
+To use it just put in your projects MIDDLEWARE_CLASSES settings::
 
   MIDDLEWARE_CLASSES = (
       # ...
       'staticserve.middleware.StaticServe',
+
+      # OR:
+      # 'staticserve.middleware.StaticServe',
   )
 
-And that's it.
 
+Depending where you keep static files.
 It works only if DEBUG == True.
 
 
